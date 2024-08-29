@@ -130,7 +130,7 @@ def format_child_modules():
     Returns:
         None
     """
-    input_file = 'updatedCollection.json'
+    input_file = 'docs/updatedCollection.json'
 
     # Load the data from the input JSON file
     with open(input_file, 'r') as infile:

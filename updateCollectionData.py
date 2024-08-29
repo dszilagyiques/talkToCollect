@@ -119,7 +119,6 @@ def update_collection_data(modules_file, output_file, collection_data, updated_c
         print("Submenu folder has been cleared.")
     else:
         print("No changes detected.")
-    format_child_modules
 # # Example usage:
 # if __name__ == "__main__":
 #     update_collection_data('modules.json', 'docs/output.json', 'collection.json', 'updatedCollection.json')
