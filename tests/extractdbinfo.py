@@ -31,7 +31,7 @@ def export_table_to_csv(db_file, table_name, output_csv):
         conn.close()
 
 if __name__ == "__main__":
-    db_file = r'testfiles\my_db.db'  # Replace with your .db file path
+    db_file = r'tests\testfiles\multiplesubmenus.db'  # Replace with your .db file path
     table_name = 'workorders'     # The specific table you want to export
     output_csv = f"{table_name}.csv"
 
