@@ -1,3 +1,4 @@
 .env
 testFiles/
 workorders.csv
+venv/
