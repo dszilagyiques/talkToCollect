@@ -1,0 +1,228 @@
+{
+    "name": "fill_form",
+    "description": "Fills the form data based on the user description.",
+    "strict": true,
+    "schema": {
+        "type": "object",
+        "properties": {
+            "All-clear": {
+                "type": [
+                    "boolean",
+                    "null"
+                ],
+                "description": "true or false."
+            },
+            "Date of Inspection": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "The date formatted as YYYY-MM-DD"
+            },
+            "Inspector Name": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "A string of text"
+            },
+            "County": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "Select a singular option from the enum",
+                "enum": [
+                    "LA County",
+                    "Orange County",
+                    "Riverside County"
+                ]
+            },
+            "CNC Reasons": {
+                "type": [
+                    "array",
+                    "null"
+                ],
+                "description": "Select one or multiple options",
+                "items": {
+                    "type": "string",
+                    "enum": [
+                        "Angry Homeowner",
+                        "Locked Gate",
+                        "Dog",
+                        "Inaccessible"
+                    ]
+                }
+            },
+            "Notes": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "A string of text"
+            },
+            "Number of WEPs": {
+                "type": [
+                    "number",
+                    "null"
+                ],
+                "description": "A numeric value"
+            },
+            "Pole Height": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "Represents feet and inches as X'X\" (examples: 12'6\", 4'3\", 45'0\", 13'1/4\", 67'1/2\"))"
+            },
+            "Conductor needs repair?": {
+                "type": [
+                    "boolean",
+                    "null"
+                ],
+                "description": "In a submenu called: 'Conductors'. true or false."
+            },
+            "Date of conductor maintenance": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "In a submenu called: 'Conductors'. The date formatted as YYYY-MM-DD"
+            },
+            "Conductor Owner": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "In a submenu called: 'Conductors'. A string of text"
+            },
+            "WEP": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "In a submenu called: 'Conductors'. Select a singular option from the enum",
+                "enum": [
+                    "1/2",
+                    "3/4",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8"
+                ]
+            },
+            "Conductor Notes": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "In a submenu called: 'Conductors'. A string of text"
+            },
+            "Conductor Strands": {
+                "type": [
+                    "number",
+                    "null"
+                ],
+                "description": "In a submenu called: 'Conductors'. A numeric value"
+            },
+            "Conductor Height": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "In a submenu called: 'Conductors'. Represents feet and inches as X'X\" (examples: 12'6\", 4'3\", 45'0\", 13'1/4\", 67'1/2\"))"
+            },
+            "Conductor Violations": {
+                "type": [
+                    "array",
+                    "null"
+                ],
+                "description": "In a submenu called: 'Conductors'. Select one or multiple options",
+                "items": {
+                    "type": "string",
+                    "enum": [
+                        "Wire Clearance",
+                        "Wire Exposed",
+                        "Wire Grade Insufficient"
+                    ]
+                }
+            },
+            "Equipment needs repair?": {
+                "type": [
+                    "boolean",
+                    "null"
+                ],
+                "description": "In a submenu called: 'Equipment'. true or false."
+            },
+            "Date of equipment maintenance": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "In a submenu called: 'Equipment'. The date formatted as YYYY-MM-DD"
+            },
+            "Technician phone number": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "In a submenu called: 'Equipment'. A string of text"
+            },
+            "Grade of repair": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "In a submenu called: 'Equipment'. Select a singular option from the enum",
+                "enum": [
+                    "minor",
+                    "significant",
+                    "total replacement"
+                ]
+            },
+            "Equipment Inspection Notes": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "In a submenu called: 'Equipment'. A string of text"
+            },
+            "Equipment Height": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "description": "In a submenu called: 'Equipment'. Represents feet and inches as X'X\" (examples: 12'6\", 4'3\", 45'0\", 13'1/4\", 67'1/2\"))"
+            }
+        },
+        "additionalProperties": false,
+        "required": [
+            "All-clear",
+            "Date of Inspection",
+            "Inspector Name",
+            "County",
+            "CNC Reasons",
+            "Notes",
+            "Number of WEPs",
+            "Pole Height",
+            "Conductor needs repair?",
+            "Date of conductor maintenance",
+            "Conductor Owner",
+            "WEP",
+            "Conductor Notes",
+            "Conductor Strands",
+            "Conductor Height",
+            "Conductor Violations",
+            "Equipment needs repair?",
+            "Date of equipment maintenance",
+            "Technician phone number",
+            "Grade of repair",
+            "Equipment Inspection Notes",
+            "Equipment Height"
+        ]
+    }
+}

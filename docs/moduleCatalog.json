@@ -1,0 +1,199 @@
+[
+    {
+        "label": "All-clear",
+        "type": "Toggle",
+        "inputs": [
+            "true",
+            "false"
+        ],
+        "parentModule": null
+    },
+    {
+        "label": "Date of Inspection",
+        "type": "Date",
+        "inputs": [
+            "YYYY-MM-DD"
+        ],
+        "parentModule": null
+    },
+    {
+        "label": "Inspector Name",
+        "type": "Text",
+        "inputs": [
+            "string"
+        ],
+        "parentModule": null
+    },
+    {
+        "label": "County",
+        "type": "DropDown",
+        "inputs": [
+            "LA County",
+            "Orange County",
+            "Riverside County"
+        ],
+        "parentModule": null
+    },
+    {
+        "label": "CNC Reasons",
+        "type": "MultiSelect",
+        "inputs": [
+            "Angry Homeowner",
+            "Locked Gate",
+            "Dog",
+            "Inaccessible"
+        ],
+        "parentModule": null
+    },
+    {
+        "label": "Notes",
+        "type": "Textarea",
+        "inputs": [
+            "string"
+        ],
+        "parentModule": null
+    },
+    {
+        "label": "Number of WEPs",
+        "type": "Numeric",
+        "inputs": [
+            "number"
+        ],
+        "parentModule": null
+    },
+    {
+        "label": "Pole Height",
+        "type": "SeparatedFeetAndInches",
+        "inputs": [
+            "number"
+        ],
+        "parentModule": null
+    },
+    {
+        "label": "Conductor needs repair?",
+        "type": "Toggle",
+        "inputs": [
+            "true",
+            "false"
+        ],
+        "parentModule": "Conductors"
+    },
+    {
+        "label": "Date of conductor maintenance",
+        "type": "Date",
+        "inputs": [
+            "YYYY-MM-DD"
+        ],
+        "parentModule": "Conductors"
+    },
+    {
+        "label": "Conductor Owner",
+        "type": "Text",
+        "inputs": [
+            "string"
+        ],
+        "parentModule": "Conductors"
+    },
+    {
+        "label": "WEP",
+        "type": "DropDown",
+        "inputs": [
+            "1/2",
+            "3/4",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "parentModule": "Conductors"
+    },
+    {
+        "label": "Conductor Notes",
+        "type": "Textarea",
+        "inputs": [
+            "string"
+        ],
+        "parentModule": "Conductors"
+    },
+    {
+        "label": "Conductor Strands",
+        "type": "Numeric",
+        "inputs": [
+            "number"
+        ],
+        "parentModule": "Conductors"
+    },
+    {
+        "label": "Conductor Height",
+        "type": "SeparatedFeetAndInches",
+        "inputs": [
+            "number"
+        ],
+        "parentModule": "Conductors"
+    },
+    {
+        "label": "Conductor Violations",
+        "type": "MultiSelect",
+        "inputs": [
+            "Wire Clearance",
+            "Wire Exposed",
+            "Wire Grade Insufficient"
+        ],
+        "parentModule": "Conductors"
+    },
+    {
+        "label": "Equipment needs repair?",
+        "type": "Toggle",
+        "inputs": [
+            "true",
+            "false"
+        ],
+        "parentModule": "Equipment"
+    },
+    {
+        "label": "Date of equipment maintenance",
+        "type": "Date",
+        "inputs": [
+            "YYYY-MM-DD"
+        ],
+        "parentModule": "Equipment"
+    },
+    {
+        "label": "Technician phone number",
+        "type": "Text",
+        "inputs": [
+            "string"
+        ],
+        "parentModule": "Equipment"
+    },
+    {
+        "label": "Grade of repair",
+        "type": "DropDown",
+        "inputs": [
+            "minor",
+            "significant",
+            "total replacement"
+        ],
+        "parentModule": "Equipment"
+    },
+    {
+        "label": "Equipment Inspection Notes",
+        "type": "Textarea",
+        "inputs": [
+            "string"
+        ],
+        "parentModule": "Equipment"
+    },
+    {
+        "label": "Equipment Height",
+        "type": "SeparatedFeetAndInches",
+        "inputs": [
+            "number"
+        ],
+        "parentModule": "Equipment"
+    }
+]
