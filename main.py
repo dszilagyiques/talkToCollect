@@ -25,7 +25,13 @@ async def update_collection(
 ):
     logger.info("Endpoint '/talk_to_collect_2d/' called")
 
-    # Step 1: Ensure collection_file is provided
+    # Ensure all files are provided
+    if not audio_file:
+        logger.error("Audio file is not provided")
+        raise HTTPException(status_code=400, detail="Audio file must be provided")
+    if not modules_file:
+        logger.error("Modules file is not provided")
+        raise HTTPException(status_code=400, detail="Modules file must be provided")
     if not collection_file:
         logger.error("Collection file is not provided")
         raise HTTPException(status_code=400, detail="Collection file must be provided")
